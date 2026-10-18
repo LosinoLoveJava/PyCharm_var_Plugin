@@ -1,0 +1,19 @@
+<idea-plugin>
+    <id>dev.pycharmvar.postfix</id>
+    <name>Python .var Postfix</name>
+    <version>0.1.0</version>
+    <vendor>Losino</vendor>
+
+    <description><![CDATA[
+        Adds a Python .var postfix completion that invokes PyCharm's native Introduce Variable action.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.python</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <codeInsight.template.postfixTemplateProvider
+                language="Python"
+                implementationClass="dev.pycharmvar.postfix.PythonVarPostfixTemplateProvider"/>
+    </extensions>
+</idea-plugin>

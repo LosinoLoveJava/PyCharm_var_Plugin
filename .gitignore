@@ -1,0 +1,48 @@
+# Internal planning and release records (kept locally)
+/PLUGIN_PLAN.md
+/docs/
+
+# Gradle / IntelliJ Platform caches and build output
+.gradle/
+.intellijPlatform/
+build/
+out/
+*.class
+
+# Only distributable plugin ZIPs belong in the release directory
+/releases/*
+!/releases/pycharm-var-postfix-*.zip
+
+# Personal IDE settings
+.idea/
+.vscode/
+.fleet/
+*.iml
+*.ipr
+*.iws
+
+# Local configuration and credentials
+local.properties
+.env
+.env.*
+!.env.example
+!.env.*.example
+certificates/
+*.p12
+*.pfx
+*.pem
+*.key
+*.jks
+*.keystore
+
+# Logs, JVM dumps, and temporary files
+*.log
+*.hprof
+*.tmp
+*.bak
+*~
+
+# Operating system metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
